@@ -10,21 +10,43 @@
 <body>
     <section id="landing">
         <nav>
-            <div class="nav__container">
+            <div class="row nav__row">
                 <div class="nav__logo">
                     <img src="./fpassets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Logo" class="logo">
+                    <div class="nav__logo--title">Treact</div>
                 </div>
-                        <div class="nav__logo--title">Treact</div>
-                        <ul class="nav__links">
-                            <li><a href="#" class="nav__link">About</a></li>
-                            <li><a href="#" class="nav__link">Blog</a></li>
-                            <li><a href="#" class="nav__link">Pricing</a></li>
-                            <li><a href="#" class="nav__link">Contact Us</a></li>
-                            <li><a href="#" class="nav__link">Login</a></li>
-                            <li><a href="#" class="nav__link--primary">Sign Up</a></li>
-                        </ul>
-                </div>
-            </nav>
+                    <div class="nav__links">                            <a href="#" class="nav__link">About</a>
+                        <a href="#" class="nav__link">Blog</a>
+                        <a href="#" class="nav__link">Pricing</a>
+                        <a href="#" class="nav__link">Contact Us</a>
+                        <a href="#" class="nav__link login">Login</a>
+                        <a href="#" class="nav__link--primary">Sign Up</a>
+                    </div>
+                <button class="btn__menu" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__menu--svg">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div class="modal">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledCloseIcon-lj69nl-14 fASujC">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal__links">
+                <a class="modal__link">About</a>
+                <a class="modal__link">Blog</a>
+                <a class="modal__link">Pricing</a>
+                <a class="modal__link">Contact Us</a>
+                <a class="modal__link">Login</a>
+                <a class="modal__link modal__link--primary">Sign Up</a>
+            </div>
+        </div>
             <header>
                 <div class="container">
                     <div class="row">
@@ -44,7 +66,6 @@
                             OUR TRUSTED CUSTOMERS
                         </p>
                         <img src="./fpassets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="" class="header__strip">
-                        </div>
                         <figure class="header__img--wrapper">
                             <img src="./fpassets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="" class="header__img">
                         </figure>
@@ -136,7 +157,7 @@
         </section>
         <section id="quality">
             <div class="container">
-                <div class="quality__row">
+                <div class="row">
                     <div class="quality__description">
                         <div class="section__tag">QUALITY WORK</div>
                         <h2 class="section__title">Designed & Developed by<span class="purple"> Professionals.</span></h2>
