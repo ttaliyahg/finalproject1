@@ -30,7 +30,6 @@
                         <line x1="3" y1="18" x2="21" y2="18"></line>
                     </svg>
                 </button>
-            </div>
         </nav>
         <div class="modal">
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
@@ -52,7 +51,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="header__description">
-                        <h1>
+                        <h1 class="header__title">
                             Beautiful React Templates <span class="purple"> for you. </span>
                         </h1>
                         <p class="header__description--para">
@@ -67,10 +66,10 @@
                             OUR TRUSTED CUSTOMERS
                         </p>
                         <img src="./fpassets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="" class="header__strip">
+                    </div>
                         <figure class="header__img--wrapper">
                             <img src="./fpassets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="" class="header__img">
                         </figure>
-                        </div>
                     </div>        
                 </div>
             </header>
@@ -213,35 +212,43 @@
             <div class="container">
                 <div class="row">
                     <div class="values__description">
-                        <img src="./fpassets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="" class="values__img">
                         <div class="section__tag">VALUES</div>
-                        <h2 class="section__title">We Always Abide by Our <span class="purple"> Princples. </span></h2>
+                        <h2 class="section__title">We Always Abide by Our <span class="purple"> Princples.</span></h2>
                         <div class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                             <div class="values__list">
                                 <div class="value">
                                     <div class="value__title">
                                         <figure class="value__img--wrapper">
-                                            <img src="" alt="">
-                                        </figure>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(39, 103, 73, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="value__img">
+                                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                        </svg>
+                                    </figure>
                                         <div class="value__name">Affordable</div>
                                     </div>
-                                    <div class="value__para">
-                                        We promise to offer you the best rate we can - at par with the industry standard.
-                                    </div>
+                                        <div class="value__para">
+                                            We promise to offer you the best rate we can - at par with the industry standard.
+                                        </div>
                                 </div>
                                 <div class="value">
                                     <div class="value__title">
                                         <figure class="value__img--wrapper">
-                                            <img src="" alt="">
-                                        </figure>
+                                        <!-- rgba(155, 44, 44, 1) -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(155, 44, 44, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="value__img">
+                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                        </svg>
+                                    </figure>
                                         <div class="value__name">Professionalism</div>
                                     </div>
-                                    <div class="value__para">We assure you that our templates are designed and created by professional designers.</div>
-                                </div>
+                                        <div class="value__para">
+                                            We assure you that our templates are designed and created by professional designers.</div>
+                                    </div>
                             </div>
                             <button class="value__btn">Learn More</button>
-                    </div>
+                        </div>
+                        <img class="values__img" src="./fpassets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="">
                 </div>
             </div>
         </section>
@@ -406,7 +413,7 @@
                     <h5 class="footer__logo--text">Treact Inc.</h5>
                 </div>
                 <div class="footer__copyright">© 2018 Treact Inc. All Rights Reserved.</div>
-                <div class="footer__socials">
+                <div class="footer__social">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-youtube"></i>
